@@ -1,0 +1,269 @@
+body.dark-mode {
+    color: white !important;
+    background-color: rgba(10, 14, 20, 1) !important;
+}
+
+body.dark-mode #page,
+body.dark-mode #page-content,
+body.dark-mode #region-main,
+body.dark-mode #region-main-box,
+body.dark-mode .main-inner,
+body.dark-mode .main-inner-wrapper,
+body.dark-mode header#page-header {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+body.dark-mode #topofscroll {
+    background-color: rgba(10, 14, 20, 1) !important;
+}
+
+body.dark-mode .drawer-right,
+
+body.dark-mode .drawers,
+body.dark-mode [data-region="mainpage"] {
+    background-color: transparent !important;
+}
+
+body.dark-mode nav.navbar,
+body.dark-mode .navbar.fixed-top,
+body.dark-mode .navbar.bg-primary {
+    background-color: #1a2332 !important;
+    border-bottom: 1px solid #2d3f52;
+}
+
+body.dark-mode .navbar-brand,
+body.dark-mode .navbar .nav-link {
+    color: #ffffff !important;
+}
+
+body.dark-mode .navbar .nav-link:hover {
+    color: #5ea3ff !important;
+}
+
+body.dark-mode .navbar-toggler {
+    border-color: #2d3f52 !important;
+}
+
+body.dark-mode .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4, 
+body.dark-mode h5, 
+body.dark-mode h6 {
+    color: white !important;
+}
+
+body.dark-mode .card,
+body.dark-mode .card-body,
+body.dark-mode .message-drawer,
+body.dark-mode .block {
+    background-color: rgba(15, 20, 25, 0.9) !important;
+    border-color: #1e2936 !important;
+    color: white !important;
+}
+
+body.dark-mode .text-muted,
+body.dark-mode .muted,
+body.dark-mode .categoryname,
+body.dark-mode small {
+    color: #8b95a5 !important;
+}
+
+body.dark-mode .list-group-item {
+    background-color: rgba(15, 20, 25, 0.9) !important;
+    color: white !important;
+    border-color: #1e2936 !important;
+}
+
+body.dark-mode .list-group-item:hover {
+    background-color: rgba(21, 27, 36, 0.95) !important;
+}
+
+body.dark-mode .message {
+    background-color: rgba(30, 41, 54, 0.9) !important;
+    color: white !important;
+}
+
+body.dark-mode .tail {
+    background-color: rgba(15, 20, 25, 0.9) !important;
+    z-index: -1 !important;
+}
+
+body.dark-mode .course-card {
+    background-color: rgba(15, 20, 25, 0.9) !important;
+    color: white !important;
+    border-color: #1e2936 !important;
+}
+
+body.dark-mode .card-footer,
+body.dark-mode .card-footer.bg-white,
+body.dark-mode .footer-container {
+    background-color: rgba(15, 20, 25, 0.85) !important;
+    border-top-color: #1e2936 !important;
+}
+
+body.dark-mode .activityicon img {
+    filter: brightness(0) invert(1) !important;
+}
+
+body.dark-mode .btn-outline-secondary {
+    background-color: rgba(15, 20, 25, 0.9) !important;
+    color: white !important;
+    border-color: #1e2936 !important;
+}
+
+body.dark-mode .btn-outline-secondary:hover {
+    background-color: rgba(30, 41, 54, 0.95) !important;
+    color: white !important;
+    border-color: #2d3f52 !important;
+}
+
+body.dark-mode .dropdown-menu {
+    background-color: rgba(15, 20, 25, 0.98) !important;
+    border-color: #1e2936 !important;
+}
+
+body.dark-mode .dropdown-item {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+body.dark-mode .dropdown-item:hover,
+body.dark-mode .dropdown-item-active {
+    background-color: rgba(30, 41, 54, 0.9) !important;
+    color: white !important;
+}
+
+body.dark-mode .form-control,
+body.dark-mode input[type="text"],
+body.dark-mode textarea {
+    background-color: rgba(15, 20, 25, 0.9) !important;
+    color: white !important;
+    border-color: #1e2936 !important;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #5a6472 !important;
+}
+
+body.dark-mode .input-group-text {
+    background-color: rgba(15, 20, 25, 0.9) !important;
+    border-color: #1e2936 !important;
+    color: white !important;
+}
+
+body.dark-mode .icon {
+    color: white !important;
+}
+
+body.dark-mode #page-footer,
+body.dark-mode .footer-content-popover {
+    background-color: rgba(15, 20, 25, 0.95) !important;
+    color: white !important;
+}
+
+body.dark-mode .footer-dark {
+    background-color: rgba(10, 14, 20, 0.98) !important;
+}
+
+body.dark-mode .drawer {
+    background-color: rgba(15, 20, 25, 0.98) !important;
+}
+
+body.dark-mode .drawer .drawerheader {
+    background-color: rgba(10, 14, 20, 0.95) !important;
+    border-bottom-color: #1e2936 !important;
+}
+
+body.dark-mode .calendarmonth,
+body.dark-mode .calendartable {
+    background-color: transparent !important;
+}
+
+body.dark-mode .calendarmonth td,
+body.dark-mode .calendarmonth th {
+    border-color: #1e2936 !important;
+    color: white !important;
+}
+
+body.dark-mode .day.today {
+    background-color: rgba(30, 41, 54, 0.7) !important;
+}
+
+body.dark-mode .calendarwrapper {
+    background-color: rgba(15, 20, 25, 0.7) !important;
+}
+
+body.dark-mode a {
+    color: #5ea3ff !important;
+}
+
+body.dark-mode a:hover {
+    color: #8dbfff !important;
+}
+
+body.dark-mode [data-region="timeline"] {
+    background-color: transparent !important;
+}
+
+body.dark-mode .popover,
+body.dark-mode .modal-content {
+    background-color: rgba(15, 20, 25, 0.98) !important;
+    border-color: #1e2936 !important;
+    color: white !important;
+}
+
+body.dark-mode .bg-white {
+    background-color: rgba(15, 20, 25, 0.85) !important;
+}
+
+body.dark-mode .bg-light {
+    background-color: rgba(10, 14, 20, 0.7) !important;
+}
+
+body.dark-mode .bg-secondary {
+    background-color: rgba(30, 41, 54, 0.9) !important;
+}
+
+body.dark-mode .section {
+    background-color: transparent !important;
+}
+
+body.dark-mode .section.card {
+    background-color: rgba(15, 20, 25, 0.9) !important;
+}
+
+body.dark-mode .border-bottom {
+    border-bottom-color: #1e2936 !important;
+}
+
+body.dark-mode .border-top {
+    border-top-color: #1e2936 !important;
+}
+
+body.dark-mode .bg-pulse-grey {
+    background-color: rgba(30, 41, 54, 0.5) !important;
+}
+
+body.dark-mode .container-fluid {
+    background-color: transparent !important;
+}
+
+body.dark-mode .navbar .divider {
+    border-color: #2d3f52 !important;
+}
+
+body.dark-mode .usermenu .dropdown-toggle,
+body.dark-mode #usernavigation .btn {
+    color: white !important;
+}
+
+body.dark-mode .userbutton .userinitials {
+    background-color: #2d3f52 !important;
+    color: white !important;
+}

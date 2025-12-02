@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Dark Delta</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 220px;
+      padding: 10px;
+      transition: background-color 0.3s, color 0.3s;
+      text-align: center;
+    }
+    .titleDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .titleDiv img {
+      width: 180px;
+      height: 180px;
+      margin-top: 10px;
+    }
+    .switchDiv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 24px;
+    }
+    .switch input { display: none; }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0;
+      right: 0; bottom: 0;
+      background-color: #ccc;
+      transition: 0.4s;
+      border-radius: 24px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px; width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+    .label-text {
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="titleDiv">
+    <h4>Dark Delta</h4>
+    <img id="lightImage" src="../img/lightModeImage.png" alt="Light Mode" style="display: block;">
+    <img id="darkImage" src="../img/darkModeImage.png" alt="Dark Mode" style="display: none;">
+  </div>
+  <div class="switchDiv">
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider"></span>
+    </label>
+    <span class="label-text">Wyłączony</span>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
