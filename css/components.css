@@ -27,10 +27,13 @@ body.dark-mode .secondary-navigation .moremenu .nav .nav-item :hover {
 }
 
 body.dark-mode .drawer-right,
-
 body.dark-mode .drawers,
 body.dark-mode [data-region="mainpage"] {
     background-color: transparent !important;
+}
+
+body.dark-mode .drawer-toggler .btn {
+    background-color: #2d3f52 !important;;
 }
 
 body.dark-mode nav.navbar,

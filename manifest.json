@@ -17,7 +17,7 @@
       "matches": ["*://delta.pk.edu.pl/*"],
       "js": ["src/content.js"],
       "css": ["css/components.css"],
-      "run_at": "document_end"
+      "run_at": "document_start"
     }
   ]
 }
