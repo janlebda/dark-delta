@@ -5,7 +5,7 @@
   "description": "Enable dark mode on delta.pk.edu.pl",
   "permissions": ["storage", "activeTab", "scripting"],
   "icons": {
-    "48": "img/icon.svg"
+    "48": "img/icon.jpg"
   },
   "action": {
     "default_popup": "src/popup.html"
