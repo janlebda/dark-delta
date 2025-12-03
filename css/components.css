@@ -16,7 +16,8 @@ body.dark-mode header#page-header {
 
 body.dark-mode #topofscroll,
 body.dark-mode .secondary-navigation .moremenu,
-body.dark-mode .secondary-navigation .moremenu .nav {
+body.dark-mode .secondary-navigation .moremenu .nav,
+body.dark-mode .message-app {
     background-color: rgba(10, 14, 20, 1) !important;
 }
 
@@ -107,14 +108,15 @@ body.dark-mode .list-group-item:hover {
     background-color: rgba(21, 27, 36, 0.95) !important;
 }
 
-body.dark-mode .message {
+body.dark-mode .message,
+body.dark-mode .message .time {
     background-color: rgba(30, 41, 54, 0.9) !important;
     color: white !important;
 }
 
 body.dark-mode .tail {
     background-color: transparent !important;
-    z-index: -1 !important;
+    border-bottom-color: rgba(30, 41, 54, 0.9) !important;
 }
 
 body.dark-mode .course-card {
