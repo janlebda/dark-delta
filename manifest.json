@@ -1,9 +1,10 @@
 {
   "manifest_version": 3,
   "name": "Dark Delta",
-  "version": "0.1",
+  "version": "1.0",
   "description": "Enable dark mode on delta.pk.edu.pl",
   "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["*://delta.pk.edu.pl/*"],
   "icons": {
     "48": "img/icon.jpg"
   },
@@ -11,7 +12,10 @@
     "default_popup": "src/popup.html"
   },
 
-  
+  "background": {
+    "service_worker": "background.js"
+  },
+ 
   "content_scripts": [
     {
       "matches": ["*://delta.pk.edu.pl/*"],
