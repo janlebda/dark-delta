@@ -6,17 +6,13 @@ const darkImage = document.getElementById("darkImage");
 
 function updatePopupTheme(enabled) {
   if (enabled) {
-    body.style.backgroundColor = "#0a161f";
+    body.style.setProperty("--tint", "rgba(0, 0, 0, 0.4)");
     body.style.color = "white";
     label.textContent = "Włączony";
-    lightImage.style.display = "none";
-    darkImage.style.display = "block";
   } else {
-    body.style.backgroundColor = "white";
+    body.style.setProperty("--tint", "rgba(82, 82, 82, 0.4)");
     body.style.color = "black";
     label.textContent = "Wyłączony";
-    lightImage.style.display = "block";
-    darkImage.style.display = "none";
   }
 }
 
