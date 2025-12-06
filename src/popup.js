@@ -17,7 +17,7 @@ function updatePopupTheme(enabled) {
 }
 
 chrome.storage.local.get("enabled", data => {
-  const enabled = data.enabled || false;
+  const enabled = data.enabled !== undefined ? data.enabled : true;
   toggle.checked = enabled;
   updatePopupTheme(enabled);
 });
@@ -26,7 +26,6 @@ toggle.addEventListener("change", () => {
   const enabled = toggle.checked;
   chrome.storage.local.set({ enabled });
   updatePopupTheme(enabled);
-
   chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
     chrome.tabs.sendMessage(
       tabs[0].id,

@@ -23,7 +23,6 @@ function startDarkMode() {
         });
       });
     });
-
     observer.observe(document.body, { childList: true, subtree: true });
   }
 }
@@ -43,7 +42,8 @@ function stopDarkMode() {
 }
 
 chrome.storage.local.get("enabled", (data) => {
-  if (data.enabled) startDarkMode();
+  const enabled = data.enabled !== undefined ? data.enabled : true;
+  if (enabled) startDarkMode();
 });
 
 chrome.runtime.onMessage.addListener((msg) => {
