@@ -10,7 +10,7 @@ function updatePopupTheme(enabled) {
     body.style.color = "white";
     label.textContent = "Włączony";
   } else {
-    body.style.setProperty("--tint", "rgba(82, 82, 82, 0.4)");
+    body.style.setProperty("--tint", "rgba(212, 212, 212, 0.4)");
     body.style.color = "black";
     label.textContent = "Wyłączony";
   }

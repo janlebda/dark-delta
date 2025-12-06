@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Dark Delta</title>
-
   <style>
     body {
       font-family: Arial, sans-serif;
-      width: 220px;
-      height: 150px;
+      width: 180px;
+      height: 90px;
       margin: 0;
+      padding: 10px;
       background-image: url('../img/icon.jpg');
       background-size: cover;
       background-position: center;
@@ -17,8 +17,8 @@
       --tint: rgba(255, 255, 255, 0.25);
       position: relative;
       overflow: hidden;
+      box-sizing: border-box;
     }
-
     body::before {
       content: "";
       position: absolute;
@@ -29,23 +29,24 @@
       z-index: -1;
       transition: background 0.3s;
     }
-
     .titleDiv {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      margin-bottom: 15px;
-      gap: 10px;
+      margin-bottom: 20px;
+      gap: 8px;
       position: relative;
       z-index: 5;
     }
-
-    .titleDiv img {
-      width: 28px;
-      height: 28px;
+    .titleDiv h4 {
+      margin: 0;
+      font-size: 20px;
     }
-
+    .titleDiv img {
+      width: 22px;
+      height: 22px;
+    }
     .switchDiv {
       display: flex;
       align-items: center;
@@ -53,16 +54,13 @@
       position: relative;
       z-index: 5;
     }
-
     .switch {
       position: relative;
       display: inline-block;
-      width: 50px;
-      height: 24px;
+      width: 45px;
+      height: 22px;
     }
-
     .switch input { display: none; }
-
     .slider {
       position: absolute;
       cursor: pointer;
@@ -70,41 +68,37 @@
       right: 0; bottom: 0;
       background-color: #ccc;
       transition: 0.4s;
-      border-radius: 24px;
+      border-radius: 22px;
     }
-
     .slider:before {
       position: absolute;
       content: "";
-      height: 18px; width: 18px;
+      height: 16px; 
+      width: 16px;
       left: 3px;
       bottom: 3px;
       background-color: white;
       transition: 0.4s;
       border-radius: 50%;
     }
-
     input:checked + .slider {
       background-color: #2196F3;
     }
-
     input:checked + .slider:before {
-      transform: translateX(26px);
+      transform: translateX(23px);
     }
-
     .label-text {
-      margin-left: 10px;
+      margin-left: 8px;
       vertical-align: middle;
+      font-size: 13px;
     }
   </style>
 </head>
-
 <body>
   <div class="titleDiv">
-    <img id="icon" src="../img/icon-nobg.jpg" alt="icon">
+    <img id="icon" src="../img/icon-popup.png" alt="icon">
     <h4>Dark Delta</h4> 
   </div>
-
   <div class="switchDiv">
     <label class="switch">
       <input type="checkbox" id="darkModeToggle">
@@ -112,7 +106,6 @@
     </label>
     <span class="label-text"></span>
   </div>
-
   <script src="popup.js"></script>
 </body>
 </html>
